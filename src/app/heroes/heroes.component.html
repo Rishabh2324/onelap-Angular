@@ -1,0 +1,36 @@
+<div>
+  {{name}}
+</div>
+
+<h2>
+  {{greetuser()}}
+</h2>
+<h2 class="class1">{{name}}</h2>
+<h2 class="class2">{{greetuser()}}</h2>
+<h2 [class.class3]="haserror">{{name}}</h2>
+<input [id]="myid" type="text" value="Rishabh">
+<input [disabled]="isdisabled" id="{{myid}}" type="text" value="Rishabh"> 
+<h2 [ngClass]="messages">Rishabh Jain</h2>
+<button (click)="onClick()">HIT ME</button>
+{{abcd}}
+<input #myinput type="text">
+<button (click)="logmessage(myinput.value)">More Details</button>
+<h2><input [(ngModel)]="mvp" type="text"></h2>
+{{mvp}}
+<h2>{{parentdata}}</h2>
+
+<button (click)="fireEvent()">Send Event</button>
+<h2>{{ name | lowercase }}</h2>
+<h2>{{ name | uppercase }}</h2>
+<h2>{{ title | titlecase }}</h2>
+<h2>{{ value | slice: 3:5 }}</h2>
+<h2>{{ 5.768 | number :'3.2-3' }}</h2>
+
+<h2>{{date}}</h2>
+<h2>{{date | date: 'short '}}</h2>
+<h2>{{date | date :'long'}}</h2>
+
+<h2>students list</h2>
+<ul *ngFor = "let student of students">
+  <li>{{student.naam}}</li>
+</ul>
