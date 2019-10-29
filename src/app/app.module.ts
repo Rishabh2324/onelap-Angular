@@ -8,13 +8,7 @@ import { MainComponent } from './main/main.component';
 import { HomepageComponent } from './main/homepage/homepage.component';
 import { NavbarComponent } from './main/navbar/navbar.component';
 import { FooterComponent } from './main/footer/footer.component';
-import { HeaderComponent } from './main/homepage/header/header.component';
-import { FeaturesComponent } from './main/homepage/features/features.component';
-import { WorkstepsComponent } from './main/homepage/worksteps/worksteps.component';
-import { ClientStoriesComponent } from './main/homepage/client-stories/client-stories.component';
-import { CallbackFormComponent } from './main/homepage/callback-form/callback-form.component';
-import { TrackItemComponent } from './main/homepage/track-item/track-item.component';
-import { TopHeaderComponent } from './main/top-header/top-header.component';
+
 
 
 @NgModule({
@@ -24,16 +18,9 @@ import { TopHeaderComponent } from './main/top-header/top-header.component';
     HomepageComponent,
     NavbarComponent,
     FooterComponent,
-    HeaderComponent,
-    FeaturesComponent,
-    WorkstepsComponent,
-    ClientStoriesComponent,
-    CallbackFormComponent,
-    TrackItemComponent,
-    TopHeaderComponent,
-
-  ],
+],
   imports: [
+
     BrowserModule,
     FormsModule,
     HttpClientModule,
