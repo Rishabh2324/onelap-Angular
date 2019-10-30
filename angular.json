@@ -26,7 +26,9 @@
               "src/styles.css",
               "src/froala_blocks.css"
             ],
-            "scripts": []
+            "scripts": [
+              "/src/owl.carousel.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -76,7 +78,9 @@
               "src/styles.css",
               "src/froala_blocks.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "/src/owl.carousel.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
