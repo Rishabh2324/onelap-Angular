@@ -13,7 +13,13 @@ import { ClientstoriesComponent } from './homepage/clientstories/clientstories.c
 import { ProcessComponent } from './homepage/process/process.component';
 import { HardwaresComponent } from './hardwares/hardwares.component';
 import { GPStrackersComponent } from './hardwares/gpstrackers/gpstrackers.component';
-import { MainRoutingModule } from './main-routing.module'
+import { MainRoutingModule } from './main-routing.module';
+import { LogisticsComponent } from './logistics/logistics.component';
+import { MunicipalcorporationComponent } from './municipalcorporation/municipalcorporation.component';
+import { DronesComponent } from './drones/drones.component';
+import { HeavyEquipmentsComponent } from './heavy-equipments/heavy-equipments.component';
+import { RentalbikesComponent } from './rentalbikes/rentalbikes.component';
+import { DeliveryComponent } from './delivery/delivery.component'
 
 
 @NgModule({
@@ -31,6 +37,12 @@ import { MainRoutingModule } from './main-routing.module'
     ProcessComponent,
     HardwaresComponent,
     GPStrackersComponent,
+    LogisticsComponent,
+    MunicipalcorporationComponent,
+    DronesComponent,
+    HeavyEquipmentsComponent,
+    RentalbikesComponent,
+    DeliveryComponent,
   ],
   imports: [
     MainRoutingModule,
