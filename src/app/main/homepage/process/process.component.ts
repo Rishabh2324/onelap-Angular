@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -13,8 +12,10 @@ export class ProcessComponent implements OnInit {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: false,
+    dots: true,
     navSpeed: 700,
+    autoplay: true,
+    autoplayTimeout: 2000,
     // tslint:disable-next-line:max-line-length
     navText: [
       '<i class="fa fa-chevron-left fables-main-text-color fables-main-border-color fables-partner-nav-icon" aria-hidden="true">',
@@ -25,17 +26,24 @@ export class ProcessComponent implements OnInit {
         items: 1
       },
       400: {
-        items: 2
+        items: 1
       },
       740: {
-        items: 3
+        items: 1
       },
       940: {
-        items: 4
+        items: 1
       }
     },
-    nav: true
+    nav: false
   };
+
+  slider = [
+    [
+      '/src/assets/images/step1.png',
+      'You will Need a Hardware'
+    ]
+  ]
   constructor() { }
 
   ngOnInit() {

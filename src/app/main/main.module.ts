@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
+
 import { MainComponent } from './main.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -19,7 +23,7 @@ import { MunicipalcorporationComponent } from './municipalcorporation/municipalc
 import { DronesComponent } from './drones/drones.component';
 import { HeavyEquipmentsComponent } from './heavy-equipments/heavy-equipments.component';
 import { RentalbikesComponent } from './rentalbikes/rentalbikes.component';
-import { DeliveryComponent } from './delivery/delivery.component'
+import { DeliveryComponent } from './delivery/delivery.component';
 
 
 @NgModule({
@@ -46,7 +50,10 @@ import { DeliveryComponent } from './delivery/delivery.component'
   ],
   imports: [
     MainRoutingModule,
-    BrowserModule
+    BrowserModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: []
