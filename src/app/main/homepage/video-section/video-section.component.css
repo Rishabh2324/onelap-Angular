@@ -1,136 +1,182 @@
-.hero-wrap {
+.demo-video-wrapper {
+    background-image: url(https://d3k5xyayaartr5.cloudfront.net/_assets/home-video/beach-waves-loop.jpg);
+}
+
+
+/* Video overlay and content */
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.video-hero--content {
     position: relative;
-    width: 100%;
-    }
-    @media (min-width: 576px) {
-      .hero-wrap .d-flex{
-       height: 200px; } }
-    @media (min-width: 768px) {
-      .hero-wrap .d-flex {
-        height: 200px;} }
-  
-    .hero-wrap .forth {
-      width: 30%;
-      height: 750px; }
-      @media (max-width: 767.98px) {
-        .hero-wrap .forth {
-          width: 0%;
-             } }
-      .hero-wrap .forth .bg-after {
-        position: relative;
-        width: 100%;
-        height: 100%; }
-        @media (min-width: 992px) {
-          .hero-wrap .forth .bg-after:after {
-            position: absolute;
-            top: -100%;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            content: '';
-            background: #000000; } }
-      .hero-wrap .forth .text {
-        position: absolute;
-        top: 40%;
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 0 15px;
-        margin: 0 auto;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        color: rgb(41, 40, 40);
-        z-index: 1;
-         }
-        
-        @media (min-width: 768px) {
-          .hero-wrap .forth .text {
-            text-align: center;
-          padding-top: 180px;} }
-        .hero-wrap .forth .text .desc {
-          width: 40%; }
-          @media (max-width: 767.98px) {
-            .hero-wrap .forth .text .desc {
-              width: 100%; }
-              .hero-wrap .forth .text .desc h1, .hero-wrap .forth .text .desc h2,.hero-wrap .forth .text .desc p {
-                color: rgb(201, 184, 184); } }
-                .hero-wrap .forth .text em{
-                
-                color:#33C09B
-                }       
-        
-        .hero-wrap .forth .text h1 {
-          font-weight: 600;
-          font-size: 50px;
-          margin-bottom: 40px;
-          color: rgb(41, 40, 40);
-          line-height: 1.2; }
-          @media (max-width: 991.98px) {
-            .hero-wrap .forth .text h1 {
-              font-size: 40px; } }
-        .hero-wrap .forth .text h2 {
-          font-size: 20px;
-          font-weight: 100;
-          justify-content: center;
-          
-          
-          color: rgba(56, 55, 55, 0.705); }
-        .hero-wrap .forth .text .btn-custom {
-          position: relative;
-          border: none;
-          color: #6abbdb;
-          z-index: 0;
-          letter-spacing: 1px; }
-          .hero-wrap .forth .text .btn-custom:after {
-            position: absolute;
-            top: 0;
-            right: -40px;
-            bottom: 0;
-            content: '';
-            width: 100%;
-            background: #6abbdb;
-            z-index: -1; }
-          .hero-wrap .forth .text .btn-custom:before {
-            position: absolute;
-            top: 50%;
-            right: -30px;
-            width: 30px;
-            height: 2px;
-            content: '';
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            background: #6abbdb; }
-    .hero-wrap .third {
-      width: 80%;
-      position: relative;
-      height: 750px; }
-      @media (max-width: 767.98px) {
-        .hero-wrap .third {
-          width: 100%; } }
-      .hero-wrap .third .icon {
-        position: absolute;
-        top: 65%;
-        left: 0;
-        width: 100px;
-        height: 100px;
-        background: #fff;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        margin-left: -50px;
-        z-index: 1;
-        -webkit-animation: pulse 2s infinite;
-        animation: pulse 2s infinite;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        border-radius: 50%; }
-        @media (max-width: 767.98px) {
-          .hero-wrap .third .icon {
-            top: 80%; } }
-        .hero-wrap .third .icon span {
-          color: #ffbd39; }
-          
+    text-align: center;
+    color: #FFF;
+    margin: 150px 0;
+}
+
+.video-hero--content h2 {
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+
+.video-hero--content p {
+    font-size: 20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #a46497;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.page-width {
+    width: 92%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    background: #2c2d33;
+    padding: 2em 0;
+}
+
+#header a {
+    color: #FFF;
+}
+
+.title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.subtitle {
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+    color: #959699;
+}
+
+a:hover .subtitle {
+    color: #FFF;
+}
+
+#site-title {
+    float: left;
+    margin: 0;
+}
+
+#content {
+    padding: 40px 0;
+}
+
+
+/* CSS from jQuery Background Video plugin */
+
+
+/**
+ * Set default positioning as a fallback for if the plugin fails
+ */
+
+.jquery-background-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jquery-background-video {
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+
+.js .jquery-background-video {
+    opacity: 0;
+    transition: opacity 300ms linear;
+}
+
+.js .jquery-background-video.is-visible {
+    opacity: 1;
+}
+
+
+/**
+ * Pause/play button
+ */
+
+.jquery-background-video-pauseplay {
+    position: absolute;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 15px;
+    padding: 0;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.jquery-background-video-pauseplay span {
+    display: none;
+}
+
+.jquery-background-video-pauseplay:after,
+.jquery-background-video-pauseplay:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s ease;
+}
+
+.jquery-background-video-pauseplay.play:before {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #FFF;
+}
+
+.jquery-background-video-pauseplay.pause:before,
+.jquery-background-video-pauseplay.pause:after {
+    border-top: 10px solid #FFF;
+    border-bottom: 10px solid #FFF;
+    border-left: 5px solid #FFF;
+}
+
+.jquery-background-video-pauseplay.pause:after {
+    left: 10px;
+}
